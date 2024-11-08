@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body data-theme="light">
+    <!-- Header -->
+    <header>
+        <div class="logo">My Search</div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/MySearch.html">My Search</a></li>
+                <li><a href="/Mytube.html">My Tube</a></li>
+                <li><a href="/Mystore.html">My Store</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="/signup.html">Signup</a></li> 
+                
+            </ul>
+        </nav>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+     <!-- Search Section -->
+     <section id="search-section">
+        <div class="content-container">
+            <h2>Search for Your Favorite Content</h2>
+            <input type="text" id="search-bar" placeholder="Search..." oninput="performSearch()" />
+            <div id="search-results" class="search-results">
+                <!-- Search results will be dynamically displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Earth/My Search-Everything! | <a href="/contact.html">Contact Us</a> | <a href="/about.html">About Us</a></p>
+    </footer>
+
+    <script src="/scripts.js"></script>
+</body>
+</html>

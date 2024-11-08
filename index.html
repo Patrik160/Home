@@ -3,43 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Earth</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
+<body data-theme="light">
+    <!-- Header -->
     <header>
-        <h1>My Responsive Website</h1>
+        <div class="logo">My Earth</div>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/MySearch.html">My Search</a></li>
+                <li><a href="/Mytube.html">My Tube</a></li>
+                <li><a href="/Mystore.html">My Store</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="/signup.html">Signup</a></li> 
+                
             </ul>
         </nav>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle">Toggle Theme</button>
     </header>
-    
-    <main>
-        <section id="home">
-            <h2>Welcome to My Website</h2>
-            <p>This is a simple, responsive website template.</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Some information about us.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>Details about our services.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch through our contact page.</p>
-        </section>
-    </main>
-    
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Earth</h1>
+            <p>Your go-to platform for exploring everything Earth has to offer!</p>
+            <a href="/MySearch.html" class="cta-btn">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Sections -->
+    <section id="featured">
+        <div class="featured-container">
+            <div class="featured-item">
+                <h3>Explore Videos</h3>
+                <p>Discover amazing videos about Earth, nature, and more.</p>
+                <a href="/Mytube.html" class="cta-btn">Watch Now</a>
+            </div>
+            <div class="featured-item">
+                <h3>Shop Earth Goods</h3>
+                <p>Browse through our store for unique Earth-related products.</p>
+                <a href="/Mystore.html" class="cta-btn">Visit Store</a>
+            </div>
+            <div class="featured-item">
+                <h3>Search for Content</h3>
+                <p>Search for articles, videos, and more using our search tool.</p>
+                <a href="/MySearch.html" class="cta-btn">Start Searching</a>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 My Responsive Website</p>
+        <p>&copy; 2024 My Earth/Home-Everything! | <a href="/contact.html">Contact Us</a> | <a href="/about.html">About Us</a></p>
     </footer>
+
+    <script src="/scripts.js"></script>
 </body>
 </html>

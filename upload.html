@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Video - My Tube</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Inside upload.html -->
+<script>
+    document.getElementById('video-upload-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Simulate video upload completion (replace with actual upload logic)
+        setTimeout(() => {
+            // Notify parent window (mytube.html) of upload completion
+            window.parent.postMessage('uploadComplete', '*');
+        }, 2000); // Simulate delay for upload
+    });
+</script>
+
+</head>
+<body data-theme="light">
+    <!-- Upload Video Section -->
+    <section id="upload-video">
+        <h2>Upload Your Video</h2>
+        <form id="video-upload-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="video-title">Title:</label>
+                <input type="text" id="video-title" name="title" placeholder="Enter video title" required>
+            </div>
+            <div class="form-group">
+                <label for="video-description">Description:</label>
+                <textarea id="video-description" name="description" placeholder="Enter video description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="video-category">Category:</label>
+                <select id="video-category" name="category">
+                    <option value="education">Education</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="sports">Sports</option>
+                    <option value="music">Music</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="video-file">Select Video:</label>
+                <input type="file" id="video-file" name="video-file" accept="video/*" required>
+                <div id="video-preview-container">
+                    <video id="video-preview" controls style="display: none; width: 100%; margin-top: 20px;"></video>
+                </div>
+            </div>
+            <button type="submit" class="upload-btn">Upload Video</button>
+        </form>
+        <div id="upload-status"></div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+    </section>
+    <script src="/scripts.js"></script>
+</body>
+</html>
